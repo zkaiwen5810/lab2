@@ -32,13 +32,13 @@
 				<result name = "SUCCESS">AddAuthorSuccess.jsp</result>
 			</action>
 			<action name = "bookUpdate" class = "bookUpdate">
-				<result name = "SUCCESS">updateOption.jsp</result>
+				<result name="SUCCESS">updateOption.jsp</result>
 			</action>
-			<action name = "updateInfo" class = "updateInfo">
+			<action name="updateInfo" class = "updateInfo">
 				<result name="SUCCESS">updateSuccess.jsp</result>
 				<result name="NOAUTHOR">AddAuthor.jsp</result>
 			</action>
-			<action name = "homePage">
+			<action name="homePage">
 				<result>Inquiry.jsp</result>
 			</action>
 		</package>	
