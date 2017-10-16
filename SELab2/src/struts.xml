@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+		<package name="default" extends="struts-default">
+			<action name="Inquiry">
+				<result>/Inquiry.jsp</result>
+			</action>
+			
+			<action name = "InquireAuthor" class = "InquireAuthor">
+				<result name = "SUCCESS">/InquireAuthorSuccess.jsp</result>
+				<result name = "ERROR">/InquireAuthorError.jsp</result>
+			</action>
+			<action name = "showBookInfo" class = "showBookInfo">
+				<result name = "SUCCESS">BookInfo.jsp</result>
+			</action>
+			<action name = "bookDelete" class = "bookDelete">
+				<result name = "SUCCESS">DeleteSuccess.jsp</result>
+				<result name = "ERROR">DeleteError.jsp</result>
+			</action>
+			<action name = "bookAdd">
+				<result>BookInsert.jsp</result>
+			</action>
+			<action name = "BookInsert" class = "BookInsert">
+				<result name = "SUCCESS">InsertSuccess.jsp</result>
+				<result name = "NOAUTHOR">AddAuthor.jsp</result>
+			</action>
+			<action name = "AddAuthor" class = "AddAuthor">
+				<result name = "SUCCESS">AddAuthorSuccess.jsp</result>
+			</action>
+			<action name = "bookUpdate" class = "bookUpdate">
+				<result name = "SUCCESS">updateOption.jsp</result>
+			</action>
+			<action name = "updateInfo" class = "updateInfo">
+				<result name="SUCCESS">updateSuccess.jsp</result>
+				<result name="NOAUTHOR">AddAuthor.jsp</result>
+			</action>
+			<action name = "homePage">
+				<result>Inquiry.jsp</result>
+			</action>
+		</package>	
+</struts>
