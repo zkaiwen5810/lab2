@@ -29,7 +29,7 @@
 				<result name = "NOAUTHOR">AddAuthor.jsp</result>
 			</action>
 			<action name = "AddAuthor" class = "AddAuthor">
-				<result name = "SUCCESS">AddAuthorSuccess.jsp</result>
+				<result name= "SUCCESS">AddAuthorSuccess.jsp</result>
 			</action>
 			<action name= "bookUpdate" class = "bookUpdate">
 				<result name="SUCCESS">updateOption.jsp</result>
